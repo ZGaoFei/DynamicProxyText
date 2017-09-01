@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import cn.com.zgfei.dynamicproxytest.R;
+import cn.com.zgfei.dynamicproxytest.logger.LoggerUtils;
 
 /**
  * 参考：
@@ -32,6 +33,8 @@ public class ReflectActivity extends AppCompatActivity {
 //                PersonReflect.getConstructors(Person.class);
 
                 PersonReflect.getOther(String.class);
+                LoggerUtils.e("====", "====");
+
             }
         });
     }
